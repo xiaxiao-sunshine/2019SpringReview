@@ -67,7 +67,12 @@
 ### &emsp;10.3.4 RAID 级别的选择
 * RAID 0 级用于数据安全性不是很重要的高性能应用
 * RAID 3比特及拆分 不如 RAID 5块级拆分
-* RAID 6 级可靠性很高
+* RAID 6 级提供很高的可靠性，可以用于数据安全十分重要的应用
+* RAID 1 级提供最好的写操作性能，因此在数据库系统日志文件的存储这样的应用中广泛应用
+* RAID 5 级与RAID 1级相比具有较低的存储负载，但写操作需要更高的时间开销，所以对于经常进行读操作很少进行写操作的应用，RAID 5 级是首选
+* RAID 1 级适合中等存储需求和高I/O需求的应用的RAID选择
+
+### &emsp;10.3.5 硬件问题 <input type="button" style="border-width:0;background:#9400D3;padding:4px;border-radius:4px" value="擦洗(scrubbing)"/> <input type="button" style="border-width:0;background:#9400D3;padding:4px;border-radius:4px" value="热交换(hot swapping)"/>
 
 
 
